@@ -1,4 +1,4 @@
-package net.slqmy.rank_system_plugin.events.listeners;
+package dev.esoteric_enderman.rank_system_plugin.events.listeners;
 
 import java.util.Map;
 import java.util.UUID;
@@ -11,11 +11,11 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.permissions.PermissionAttachment;
 import org.jetbrains.annotations.NotNull;
 
-import net.slqmy.rank_system_plugin.RankSystemPlugin;
-import net.slqmy.rank_system_plugin.managers.NameTagManager;
-import net.slqmy.rank_system_plugin.managers.RankManager;
-import net.slqmy.rank_system_plugin.types.Rank;
-import net.slqmy.rank_system_plugin.utility.Utility;
+import dev.esoteric_enderman.rank_system_plugin.RankSystemPlugin;
+import dev.esoteric_enderman.rank_system_plugin.managers.NameTagManager;
+import dev.esoteric_enderman.rank_system_plugin.managers.RankManager;
+import dev.esoteric_enderman.rank_system_plugin.types.Rank;
+import dev.esoteric_enderman.rank_system_plugin.utility.Utility;
 
 public final class PlayerJoinEventListener implements Listener {
   private final RankSystemPlugin plugin;

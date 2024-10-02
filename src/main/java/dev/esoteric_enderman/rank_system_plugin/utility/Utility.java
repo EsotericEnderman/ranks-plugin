@@ -1,4 +1,4 @@
-package net.slqmy.rank_system_plugin.utility;
+package dev.esoteric_enderman.rank_system_plugin.utility;
 
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -6,8 +6,8 @@ import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import net.slqmy.rank_system_plugin.RankSystemPlugin;
-import net.slqmy.rank_system_plugin.utility.types.Pair;
+import dev.esoteric_enderman.rank_system_plugin.RankSystemPlugin;
+import dev.esoteric_enderman.rank_system_plugin.utility.types.Pair;
 
 import java.io.File;
 import java.io.IOException;

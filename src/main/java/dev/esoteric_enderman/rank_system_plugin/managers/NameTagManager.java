@@ -1,4 +1,4 @@
-package net.slqmy.rank_system_plugin.managers;
+package dev.esoteric_enderman.rank_system_plugin.managers;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -7,8 +7,8 @@ import org.bukkit.scoreboard.ScoreboardManager;
 import org.bukkit.scoreboard.Team;
 import org.jetbrains.annotations.NotNull;
 
-import net.slqmy.rank_system_plugin.RankSystemPlugin;
-import net.slqmy.rank_system_plugin.types.Rank;
+import dev.esoteric_enderman.rank_system_plugin.RankSystemPlugin;
+import dev.esoteric_enderman.rank_system_plugin.types.Rank;
 
 import java.util.List;
 import java.util.UUID;

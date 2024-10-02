@@ -1,4 +1,4 @@
-package net.slqmy.rank_system_plugin.utility.types;
+package dev.esoteric_enderman.rank_system_plugin.utility.types;
 
 public final class Pair<A, B> {
 	public final A first;

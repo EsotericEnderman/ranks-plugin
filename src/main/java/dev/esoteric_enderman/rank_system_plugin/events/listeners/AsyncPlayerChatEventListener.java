@@ -1,4 +1,4 @@
-package net.slqmy.rank_system_plugin.events.listeners;
+package dev.esoteric_enderman.rank_system_plugin.events.listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -9,8 +9,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.jetbrains.annotations.NotNull;
 
-import net.slqmy.rank_system_plugin.RankSystemPlugin;
-import net.slqmy.rank_system_plugin.managers.RankManager;
+import dev.esoteric_enderman.rank_system_plugin.RankSystemPlugin;
+import dev.esoteric_enderman.rank_system_plugin.managers.RankManager;
 
 public final class AsyncPlayerChatEventListener implements Listener {
 	private final RankManager rankManager;

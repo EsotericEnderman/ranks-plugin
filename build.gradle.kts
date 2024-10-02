@@ -38,10 +38,10 @@ fun pascalcase(kebabcaseString: String): String {
 
 description = "A simple rank system project. Saves ranks to a yml file, supports prefixes and permissions as well as chat and tab list prefixes. Tab list players are sorted based on their rank."
 
-val mainProjectAuthor = "Slqmy"
+val mainProjectAuthor = "Esoteric Enderman"
 val projectAuthors = listOfNotNull(mainProjectAuthor)
 
-val topLevelDomain = "net"
+val topLevelDomain = "dev"
 
 val projectNameString = rootProject.name
 

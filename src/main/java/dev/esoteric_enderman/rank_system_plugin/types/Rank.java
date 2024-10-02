@@ -1,4 +1,4 @@
-package net.slqmy.rank_system_plugin.types;
+package dev.esoteric_enderman.rank_system_plugin.types;
 
 import org.bukkit.ChatColor;
 import org.jetbrains.annotations.Contract;

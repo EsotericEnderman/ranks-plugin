@@ -1,4 +1,4 @@
-package net.slqmy.rank_system_plugin.commands;
+package dev.esoteric_enderman.rank_system_plugin.commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -13,11 +13,11 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.util.StringUtil;
 import org.jetbrains.annotations.NotNull;
 
-import net.slqmy.rank_system_plugin.RankSystemPlugin;
-import net.slqmy.rank_system_plugin.events.custom_events.RankChangeEvent;
-import net.slqmy.rank_system_plugin.managers.RankManager;
-import net.slqmy.rank_system_plugin.types.Rank;
-import net.slqmy.rank_system_plugin.utility.Utility;
+import dev.esoteric_enderman.rank_system_plugin.RankSystemPlugin;
+import dev.esoteric_enderman.rank_system_plugin.events.custom_events.RankChangeEvent;
+import dev.esoteric_enderman.rank_system_plugin.managers.RankManager;
+import dev.esoteric_enderman.rank_system_plugin.types.Rank;
+import dev.esoteric_enderman.rank_system_plugin.utility.Utility;
 
 import java.util.ArrayList;
 import java.util.List;

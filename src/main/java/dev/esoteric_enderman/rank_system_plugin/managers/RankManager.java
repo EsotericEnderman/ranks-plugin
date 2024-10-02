@@ -1,4 +1,4 @@
-package net.slqmy.rank_system_plugin.managers;
+package dev.esoteric_enderman.rank_system_plugin.managers;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -7,9 +7,9 @@ import org.bukkit.permissions.PermissionAttachment;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import net.slqmy.rank_system_plugin.RankSystemPlugin;
-import net.slqmy.rank_system_plugin.types.Rank;
-import net.slqmy.rank_system_plugin.utility.Utility;
+import dev.esoteric_enderman.rank_system_plugin.RankSystemPlugin;
+import dev.esoteric_enderman.rank_system_plugin.types.Rank;
+import dev.esoteric_enderman.rank_system_plugin.utility.Utility;
 
 import java.io.IOException;
 import java.util.ArrayList;

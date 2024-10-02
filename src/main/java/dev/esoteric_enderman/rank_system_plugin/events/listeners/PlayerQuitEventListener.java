@@ -1,4 +1,4 @@
-package net.slqmy.rank_system_plugin.events.listeners;
+package dev.esoteric_enderman.rank_system_plugin.events.listeners;
 
 import java.util.Map;
 import java.util.UUID;
@@ -10,8 +10,8 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.permissions.PermissionAttachment;
 import org.jetbrains.annotations.NotNull;
 
-import net.slqmy.rank_system_plugin.RankSystemPlugin;
-import net.slqmy.rank_system_plugin.managers.NameTagManager;
+import dev.esoteric_enderman.rank_system_plugin.RankSystemPlugin;
+import dev.esoteric_enderman.rank_system_plugin.managers.NameTagManager;
 
 public final class PlayerQuitEventListener implements Listener {
   private final NameTagManager nameTagManager;
