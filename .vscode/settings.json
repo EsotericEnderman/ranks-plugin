@@ -1,5 +1,15 @@
 {
-	"cSpell.words": ["aowner", "badmin", "Bukkit", "cmember", "dguest"],
+	"cSpell.words": [
+		"aowner",
+		"badmin",
+		"Bukkit",
+		"cmember",
+		"colour",
+		"colours",
+		"dguest",
+		"enderman",
+		"worldedit"
+	],
 	"java.compile.nullAnalysis.mode": "automatic",
 	"java.configuration.updateBuildConfiguration": "automatic"
 }
