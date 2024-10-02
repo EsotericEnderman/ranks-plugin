@@ -92,7 +92,7 @@ publishing {
             version = projectVersionString
 
             fun artifactPath(classifier: String): String {
-              return "$buildDir/libs/" + projectNameString + "-" + projectVersionString + "-" + classifier + ".jar"
+              return "${layout.buildDirectory}/libs/" + projectNameString + "-" + projectVersionString + "-" + classifier + ".jar"
             }
 
             val devAllClassifier = "dev-all"
