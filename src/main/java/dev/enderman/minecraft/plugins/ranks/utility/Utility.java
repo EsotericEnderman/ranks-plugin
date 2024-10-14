@@ -1,4 +1,4 @@
-package dev.esoteric_enderman.rank_system_plugin.utility;
+package dev.enderman.minecraft.plugins.ranks.utility;
 
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -6,8 +6,8 @@ import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import dev.esoteric_enderman.rank_system_plugin.RankSystemPlugin;
-import dev.esoteric_enderman.rank_system_plugin.utility.types.Pair;
+import dev.enderman.minecraft.plugins.ranks.RanksPlugin;
+import dev.enderman.minecraft.plugins.ranks.utility.types.Pair;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,7 +24,7 @@ public final class Utility {
 	private static final Pattern FORMAT_PATTERN = Pattern.compile(ChatColor.COLOR_CHAR + "[0-9a-fk-or]");
 
 	public static @Nullable Pair<@NotNull File, @NotNull YamlConfiguration> initiateYAMLFile(@NotNull String name,
-			final @NotNull RankSystemPlugin plugin)
+			final @NotNull RanksPlugin plugin)
 			throws IOException {
 		final File pluginDataFolder = plugin.getDataFolder();
 		name += ".yml";

@@ -8,8 +8,6 @@ plugins {
 
   id("io.papermc.paperweight.userdev") version "1.7.1"
   id("xyz.jpenilla.run-paper") version "2.3.0"
-
-  id("io.github.goooler.shadow") version "8.1.7"
 }
 
 val groupStringSeparator = "."
@@ -45,7 +43,7 @@ val topLevelDomain = "dev"
 
 val projectNameString = rootProject.name
 
-group = topLevelDomain + groupStringSeparator + mainProjectAuthor.lowercase() + groupStringSeparator + snakecase(rootProject.name)
+group = "enderman.dev"
 version = "1.0.0-SNAPSHOT"
 
 val projectGroupString = group.toString()
@@ -62,19 +60,11 @@ java {
   toolchain.languageVersion = JavaLanguageVersion.of(javaVersion)
 }
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
   paperweight.paperDevBundle("$paperApiVersion-R0.1-SNAPSHOT")
 }
 
 tasks {
-  build {
-    dependsOn(shadowJar)
-  }
-
   compileJava {
     options.release = javaVersion
   }
@@ -90,21 +80,6 @@ publishing {
             groupId = projectGroupString
             artifactId = projectNameString
             version = projectVersionString
-
-            fun artifactPath(classifier: String): String {
-              return "${layout.buildDirectory}/libs/" + projectNameString + "-" + projectVersionString + "-" + classifier + ".jar"
-            }
-
-            val devAllClassifier = "dev-all"
-            val devClassifier = "dev"
-
-            artifact(artifactPath(devAllClassifier)) {
-                classifier = devAllClassifier
-            }
-
-            artifact(artifactPath(devClassifier)) {
-                classifier = devClassifier
-            }
         }
     }
 }

@@ -1,4 +1,4 @@
-package dev.esoteric_enderman.rank_system_plugin.events.listeners;
+package dev.enderman.minecraft.plugins.ranks.event.listeners;
 
 import java.util.Map;
 import java.util.UUID;
@@ -11,20 +11,20 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.permissions.PermissionAttachment;
 import org.jetbrains.annotations.NotNull;
 
-import dev.esoteric_enderman.rank_system_plugin.RankSystemPlugin;
-import dev.esoteric_enderman.rank_system_plugin.managers.NameTagManager;
-import dev.esoteric_enderman.rank_system_plugin.managers.RankManager;
-import dev.esoteric_enderman.rank_system_plugin.types.Rank;
-import dev.esoteric_enderman.rank_system_plugin.utility.Utility;
+import dev.enderman.minecraft.plugins.ranks.RanksPlugin;
+import dev.enderman.minecraft.plugins.ranks.managers.NameTagManager;
+import dev.enderman.minecraft.plugins.ranks.managers.RankManager;
+import dev.enderman.minecraft.plugins.ranks.types.Rank;
+import dev.enderman.minecraft.plugins.ranks.utility.Utility;
 
 public final class PlayerJoinEventListener implements Listener {
-  private final RankSystemPlugin plugin;
+  private final RanksPlugin plugin;
   private final YamlConfiguration config;
   private final RankManager rankManager;
   private final NameTagManager nameTagManager;
   private final Map<UUID, PermissionAttachment> permissions;
 
-  public PlayerJoinEventListener(@NotNull final RankSystemPlugin plugin) {
+  public PlayerJoinEventListener(@NotNull final RanksPlugin plugin) {
     this.plugin = plugin;
     this.config = (YamlConfiguration) plugin.getConfig();
     this.rankManager = plugin.getRankManager();

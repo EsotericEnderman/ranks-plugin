@@ -1,4 +1,4 @@
-package dev.esoteric_enderman.rank_system_plugin;
+package dev.enderman.minecraft.plugins.ranks;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.PluginCommand;
@@ -8,22 +8,22 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import dev.esoteric_enderman.rank_system_plugin.commands.RankCommand;
-import dev.esoteric_enderman.rank_system_plugin.events.listeners.AsyncPlayerChatEventListener;
-import dev.esoteric_enderman.rank_system_plugin.events.listeners.PlayerJoinEventListener;
-import dev.esoteric_enderman.rank_system_plugin.events.listeners.PlayerQuitEventListener;
-import dev.esoteric_enderman.rank_system_plugin.managers.NameTagManager;
-import dev.esoteric_enderman.rank_system_plugin.managers.RankManager;
-import dev.esoteric_enderman.rank_system_plugin.types.Rank;
-import dev.esoteric_enderman.rank_system_plugin.utility.Utility;
-import dev.esoteric_enderman.rank_system_plugin.utility.types.Pair;
+import dev.enderman.minecraft.plugins.ranks.commands.RankCommand;
+import dev.enderman.minecraft.plugins.ranks.event.listeners.AsyncPlayerChatEventListener;
+import dev.enderman.minecraft.plugins.ranks.event.listeners.PlayerJoinEventListener;
+import dev.enderman.minecraft.plugins.ranks.event.listeners.PlayerQuitEventListener;
+import dev.enderman.minecraft.plugins.ranks.managers.NameTagManager;
+import dev.enderman.minecraft.plugins.ranks.managers.RankManager;
+import dev.enderman.minecraft.plugins.ranks.types.Rank;
+import dev.enderman.minecraft.plugins.ranks.utility.Utility;
+import dev.enderman.minecraft.plugins.ranks.utility.types.Pair;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class RankSystemPlugin extends JavaPlugin {
+public final class RanksPlugin extends JavaPlugin {
 
 	/*
 	 * /rank command. /rank <player> <rank name>

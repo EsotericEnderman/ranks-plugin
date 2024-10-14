@@ -1,4 +1,4 @@
-package dev.esoteric_enderman.rank_system_plugin.commands;
+package dev.enderman.minecraft.plugins.ranks.commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -13,11 +13,11 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.util.StringUtil;
 import org.jetbrains.annotations.NotNull;
 
-import dev.esoteric_enderman.rank_system_plugin.RankSystemPlugin;
-import dev.esoteric_enderman.rank_system_plugin.events.custom_events.RankChangeEvent;
-import dev.esoteric_enderman.rank_system_plugin.managers.RankManager;
-import dev.esoteric_enderman.rank_system_plugin.types.Rank;
-import dev.esoteric_enderman.rank_system_plugin.utility.Utility;
+import dev.enderman.minecraft.plugins.ranks.RanksPlugin;
+import dev.enderman.minecraft.plugins.ranks.events.custom.RankChangeEvent;
+import dev.enderman.minecraft.plugins.ranks.managers.RankManager;
+import dev.enderman.minecraft.plugins.ranks.types.Rank;
+import dev.enderman.minecraft.plugins.ranks.utility.Utility;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +29,7 @@ public final class RankCommand implements CommandExecutor, TabCompleter {
 
 	private final RankManager rankManager;
 
-	public RankCommand(final @NotNull RankSystemPlugin plugin) {
+	public RankCommand(final @NotNull RanksPlugin plugin) {
 		this.rankManager = plugin.getRankManager();
 	}
 

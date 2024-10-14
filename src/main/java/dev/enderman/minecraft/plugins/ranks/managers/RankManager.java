@@ -1,4 +1,4 @@
-package dev.esoteric_enderman.rank_system_plugin.managers;
+package dev.enderman.minecraft.plugins.ranks.managers;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -7,9 +7,9 @@ import org.bukkit.permissions.PermissionAttachment;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import dev.esoteric_enderman.rank_system_plugin.RankSystemPlugin;
-import dev.esoteric_enderman.rank_system_plugin.types.Rank;
-import dev.esoteric_enderman.rank_system_plugin.utility.Utility;
+import dev.enderman.minecraft.plugins.ranks.RanksPlugin;
+import dev.enderman.minecraft.plugins.ranks.types.Rank;
+import dev.enderman.minecraft.plugins.ranks.utility.Utility;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -32,12 +32,12 @@ public final class RankManager {
 			"n", "o",
 			"p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
 
-	private final RankSystemPlugin plugin;
+	private final RanksPlugin plugin;
 	private final YamlConfiguration config;
 	private final YamlConfiguration playerRanksConfig;
 	private final Map<UUID, PermissionAttachment> permissions = new HashMap<>();
 
-	public RankManager(final @NotNull RankSystemPlugin plugin) {
+	public RankManager(final @NotNull RanksPlugin plugin) {
 		this.plugin = plugin;
 		this.config = (YamlConfiguration) plugin.getConfig();
 		this.playerRanksConfig = plugin.getPlayerRanksConfig();

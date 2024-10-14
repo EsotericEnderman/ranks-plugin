@@ -1,4 +1,4 @@
-package dev.esoteric_enderman.rank_system_plugin.events.listeners;
+package dev.enderman.minecraft.plugins.ranks.event.listeners;
 
 import java.util.Map;
 import java.util.UUID;
@@ -10,14 +10,14 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.permissions.PermissionAttachment;
 import org.jetbrains.annotations.NotNull;
 
-import dev.esoteric_enderman.rank_system_plugin.RankSystemPlugin;
-import dev.esoteric_enderman.rank_system_plugin.managers.NameTagManager;
+import dev.enderman.minecraft.plugins.ranks.RanksPlugin;
+import dev.enderman.minecraft.plugins.ranks.managers.NameTagManager;
 
 public final class PlayerQuitEventListener implements Listener {
   private final NameTagManager nameTagManager;
   private final Map<UUID, PermissionAttachment> permissions;
 
-  public PlayerQuitEventListener(@NotNull final RankSystemPlugin plugin) {
+  public PlayerQuitEventListener(@NotNull final RanksPlugin plugin) {
     this.nameTagManager = plugin.getNameTagManager();
     this.permissions = plugin.getRankManager().getPermissions();
   }

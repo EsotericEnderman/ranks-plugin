@@ -1,4 +1,4 @@
-package dev.esoteric_enderman.rank_system_plugin.events.custom_events;
+package dev.enderman.minecraft.plugins.ranks.events.custom;
 
 import javax.annotation.Nullable;
 
@@ -8,7 +8,7 @@ import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.jetbrains.annotations.NotNull;
 
-import dev.esoteric_enderman.rank_system_plugin.types.Rank;
+import dev.enderman.minecraft.plugins.ranks.types.Rank;
 
 public final class RankChangeEvent extends Event implements Cancellable {
 	private static final HandlerList HANDLERS = new HandlerList();

@@ -1,8 +1,8 @@
-name: rank-system-plugin
+name: Ranks
 version: 1.0.0-SNAPSHOT
-main: dev.esoteric_enderman.rank_system_plugin.RankSystemPlugin
+main: dev.enderman.minecraft.plugins.ranks.RanksPlugin
 api-version: 1.21
-prefix: rank-system-plugin
+prefix: Ranks
 authors: [Esoteric Enderman]
 description: A simple rank system project. Saves ranks to a yml file, supports prefixes and permissions as well as chat and tab list prefixes. Tab list players are sorted based on their rank.
 commands:

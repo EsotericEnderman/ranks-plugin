@@ -1,4 +1,4 @@
-package dev.esoteric_enderman.rank_system_plugin.managers;
+package dev.enderman.minecraft.plugins.ranks.managers;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -7,8 +7,8 @@ import org.bukkit.scoreboard.ScoreboardManager;
 import org.bukkit.scoreboard.Team;
 import org.jetbrains.annotations.NotNull;
 
-import dev.esoteric_enderman.rank_system_plugin.RankSystemPlugin;
-import dev.esoteric_enderman.rank_system_plugin.types.Rank;
+import dev.enderman.minecraft.plugins.ranks.RanksPlugin;
+import dev.enderman.minecraft.plugins.ranks.types.Rank;
 
 import java.util.List;
 import java.util.UUID;
@@ -17,7 +17,7 @@ public final class NameTagManager {
 	private final RankManager rankManager;
 	private final ScoreboardManager scoreboardManager = Bukkit.getScoreboardManager();
 
-	public NameTagManager(final @NotNull RankSystemPlugin plugin) {
+	public NameTagManager(final @NotNull RanksPlugin plugin) {
 		rankManager = plugin.getRankManager();
 	}
 

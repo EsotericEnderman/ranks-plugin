@@ -1,4 +1,4 @@
-package dev.esoteric_enderman.rank_system_plugin.events.listeners;
+package dev.enderman.minecraft.plugins.ranks.event.listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -9,13 +9,13 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.jetbrains.annotations.NotNull;
 
-import dev.esoteric_enderman.rank_system_plugin.RankSystemPlugin;
-import dev.esoteric_enderman.rank_system_plugin.managers.RankManager;
+import dev.enderman.minecraft.plugins.ranks.RanksPlugin;
+import dev.enderman.minecraft.plugins.ranks.managers.RankManager;
 
 public final class AsyncPlayerChatEventListener implements Listener {
 	private final RankManager rankManager;
 
-	public AsyncPlayerChatEventListener(@NotNull final RankSystemPlugin plugin) {
+	public AsyncPlayerChatEventListener(@NotNull final RanksPlugin plugin) {
 		this.rankManager = plugin.getRankManager();
 	}
 
