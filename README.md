@@ -1,5 +1,7 @@
 # Ranks Plugin
 
+[![Project Status: Completed](./assets/images/badges/status.svg)](./)
+
 > A simple rank system project.
 
 ## Features
